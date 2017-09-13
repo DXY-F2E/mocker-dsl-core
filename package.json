@@ -1,0 +1,29 @@
+{
+  "name": "dsl-core",
+  "version": "0.1.0",
+  "description": "通过api-mocker的schema与请求的参数，生成对应的返回结果",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d lib/",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mockjs": "1.0.1-beta3",
+    "ramda": "0.23.0",
+    "treehugger-node": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-preset-es2015": "6.24.0",
+    "eslint": "4.6.1",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1"
+  }
+}
