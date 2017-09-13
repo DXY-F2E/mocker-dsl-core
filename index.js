@@ -1,4 +1,4 @@
 module.exports = {
-  renderer: require('./src/renderer.js'),
-  buildExampleFromSchema: require('./src/buildExampleFromSchema.js')
+  renderer: require('./lib/renderer.js'),
+  buildExampleFromSchema: require('./lib/buildExampleFromSchema.js')
 }
