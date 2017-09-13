@@ -1,6 +1,6 @@
 {
   "name": "mocker-dsl-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "通过api-mocker的schema与请求的参数，生成对应的返回结果",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "fix": "eslint . --fix"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mockjs": "1.0.1-beta3",
     "ramda": "0.23.0",

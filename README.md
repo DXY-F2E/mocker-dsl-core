@@ -2,6 +2,12 @@
 
 通过api-mocker的schema与请求的参数，生成对应的返回结果
 
+## How to use
+
+```javascript
+npm install mocker-dsl-core --save
+```
+
 ## API
 
 * `buildExampleFromSchema`: 通过[mock.js](http://mockjs.com/)将schema生成mock数据
