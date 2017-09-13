@@ -1,4 +1,4 @@
-# DSL-CORE
+# MOCKER-DSL-CORE
 
 通过api-mocker的schema与请求的参数，生成对应的返回结果
 
@@ -7,7 +7,7 @@
 * `buildExampleFromSchema`: 通过[mock.js](http://mockjs.com/)将schema生成mock数据
 * `renderer`: 通过请求参数，生成对应返回结果
 
-## 若希望只引用单个api文件，请引用lib目录，如 `var buildExample = require('mocker-dsl-core/lib/buildExampleFromSchema')`
+若希望只引用单个api文件，请引用lib目录，如 `var buildExample = require('mocker-dsl-core/lib/buildExampleFromSchema')`
 
 ## `renderer` 模板语法
 
