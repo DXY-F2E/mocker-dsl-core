@@ -7,10 +7,13 @@ function buildExampleFromSchema (schema) {
   const example = {}
   schema.params.forEach(param => {
     if (!param.key) return
-    example[param.key] = (param.example || param.example === false) ? param.example : buildExample(param)
+    example[param.key] =
+      param.example || param.example === false || param.example === 0
+        ? param.example
+        : buildExample(param)
   })
   return Mock.mock(example)
-};
+}
 function buildExample (param) {
   switch (param.type) {
     case 'object':
@@ -24,5 +27,5 @@ function buildExample (param) {
     default:
       return 'value'
   }
-};
+}
 module.exports = buildExampleFromSchema
