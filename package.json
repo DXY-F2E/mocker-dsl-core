@@ -9,12 +9,16 @@
     "lint": "eslint .",
     "fix": "eslint . --fix"
   },
-  "author": "",
+  "author": "xiangxuezhang <75851654@qq.com>",
   "license": "MIT",
   "dependencies": {
     "mockjs": "1.0.1-beta3",
     "ramda": "0.23.0",
     "treehugger-node": "0.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DXY-F2E/mocker-dsl-core.git"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
