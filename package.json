@@ -1,6 +1,6 @@
 {
   "name": "mocker-dsl-core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "通过api-mocker的schema与请求的参数，生成对应的返回结果",
   "main": "index.js",
   "scripts": {
