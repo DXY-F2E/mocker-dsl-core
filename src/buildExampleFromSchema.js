@@ -7,7 +7,13 @@ function buildExampleFromSchema (schema) {
   const example = {}
   schema.params.forEach(param => {
     if (!param.key) return
-    example[param.key] = (param.example || param.example === false) ? param.example : buildExample(param)
+    // 简单值使用example，含有子集的结构需要单独处理
+    const simpleType = ['number', 'boolean', 'string']
+    if ((simpleType.includes(param.key) && (param.example || param.example === false))) {
+      example[param.key] = param.example
+    } else {
+      example[param.key] = buildExample(param)
+    }
   })
   return Mock.mock(example)
 };
